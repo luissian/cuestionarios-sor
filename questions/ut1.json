@@ -1,82 +1,802 @@
 [
   {
-    "id": "UT1-001",
+    "id": "UT1-01-01",
+    "chapter": 1,
+    "chapterTitle": "Funcionamiento de las redes",
+    "topic": "Funcionamiento de las redes",
+    "question": "¿Qué característica distingue a una red de área local (LAN)?",
+    "options": [
+      "Une necesariamente ciudades de distintos países.",
+      "Solo funciona si todos los equipos tienen acceso a Internet.",
+      "Conecta equipos en un ámbito geográfico limitado, como un aula o edificio.",
+      "Impide compartir impresoras y archivos."
+    ],
+    "correct": 2,
+    "explanation": "Una LAN conecta dispositivos próximos y puede funcionar sin conexión a Internet.",
+    "review": "UT1 · Capítulo 1 · Funcionamiento de las redes"
+  },
+  {
+    "id": "UT1-01-02",
+    "chapter": 1,
+    "chapterTitle": "Funcionamiento de las redes",
+    "topic": "Funcionamiento de las redes",
+    "question": "Dos equipos de la misma subred quieren comunicarse. ¿Qué dispositivo permite habitualmente interconectarlos en una LAN cableada?",
+    "options": [
+      "Un módem telefónico.",
+      "Un servidor DNS obligatorio.",
+      "Una impresora de red.",
+      "Un switch."
+    ],
+    "correct": 3,
+    "explanation": "El switch conecta dispositivos de una red local y reenvía tramas según direcciones MAC.",
+    "review": "UT1 · Capítulo 1 · Funcionamiento de las redes"
+  },
+  {
+    "id": "UT1-01-03",
+    "chapter": 1,
+    "chapterTitle": "Funcionamiento de las redes",
+    "topic": "Funcionamiento de las redes",
+    "question": "¿Cuál es la función principal de una dirección IP en una red?",
+    "options": [
+      "Identificar lógicamente una interfaz para permitir la comunicación.",
+      "Identificar de forma permanente el fabricante del disco.",
+      "Cifrar automáticamente todos los archivos compartidos.",
+      "Sustituir siempre a la dirección MAC del adaptador."
+    ],
+    "correct": 0,
+    "explanation": "La IP identifica interfaces en una red; no es un mecanismo de cifrado.",
+    "review": "UT1 · Capítulo 1 · Funcionamiento de las redes"
+  },
+  {
+    "id": "UT1-01-04",
+    "chapter": 1,
+    "chapterTitle": "Funcionamiento de las redes",
+    "topic": "Funcionamiento de las redes",
+    "question": "Un equipo tiene la dirección 192.168.10.101/24. ¿Cuál de estas direcciones pertenece a la misma subred?",
+    "options": [
+      "192.168.11.10.",
+      "192.168.10.10.",
+      "192.168.20.101.",
+      "10.168.10.101."
+    ],
+    "correct": 1,
+    "explanation": "Con /24 los primeros 24 bits forman la red: 192.168.10.0/24.",
+    "review": "UT1 · Capítulo 1 · Funcionamiento de las redes"
+  },
+  {
+    "id": "UT1-01-05",
+    "chapter": 1,
+    "chapterTitle": "Funcionamiento de las redes",
+    "topic": "Funcionamiento de las redes",
+    "question": "¿Para qué sirve normalmente la puerta de enlace predeterminada?",
+    "options": [
+      "Para convertir nombres de dominio en direcciones IP.",
+      "Para asignar permisos NTFS.",
+      "Para enviar tráfico a redes distintas de la red local.",
+      "Para almacenar las copias de seguridad."
+    ],
+    "correct": 2,
+    "explanation": "La puerta de enlace suele ser un router que permite alcanzar otras redes.",
+    "review": "UT1 · Capítulo 1 · Funcionamiento de las redes"
+  },
+  {
+    "id": "UT1-02-01",
     "chapter": 2,
     "chapterTitle": "Arquitectura cliente-servidor",
     "topic": "Arquitectura cliente-servidor",
-    "question": "Un equipo central proporciona una carpeta compartida a diez ordenadores. ¿Qué función desempeña? ",
+    "question": "Un equipo central ofrece una carpeta a varios ordenadores. ¿Qué función desempeña?",
     "options": [
-      "Cliente, porque solicita archivos",
-      "Servidor, porque proporciona un recurso",
-      "Router, porque conecta redes",
-      "Switch, porque gestiona permisos"
+      "Cliente, porque solicita la carpeta a los demás.",
+      "Switch, porque asigna permisos de archivos.",
+      "Router, porque almacena las cuentas de usuario.",
+      "Servidor, porque proporciona un recurso a los clientes."
     ],
-    "correct": 1,
-    "explanation": "El servidor proporciona servicios o recursos a los clientes.",
+    "correct": 3,
+    "explanation": "El servidor proporciona recursos y los clientes los solicitan.",
     "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
   },
   {
-    "id": "UT1-002",
-    "chapter": 5,
-    "chapterTitle": "Modalidades de Windows Server",
-    "topic": "Modalidades de Windows Server",
-    "question": "¿Qué caracteriza a Server Core frente a Experiencia de escritorio?",
+    "id": "UT1-02-02",
+    "chapter": 2,
+    "chapterTitle": "Arquitectura cliente-servidor",
+    "topic": "Arquitectura cliente-servidor",
+    "question": "¿Qué ventaja suele aportar centralizar las cuentas de usuario en un servidor?",
     "options": [
-      "Incluye una interfaz gráfica completa",
-      "Solo permite administrar desde el propio servidor",
-      "No incluye el escritorio gráfico tradicional",
-      "Permite cambiar a Experiencia de escritorio sin reinstalar"
+      "Facilitar una administración coherente de usuarios y permisos.",
+      "Eliminar la necesidad de realizar copias de seguridad.",
+      "Impedir que se produzcan fallos de red.",
+      "Convertir todos los equipos cliente en servidores."
     ],
-    "correct": 2,
-    "explanation": "Server Core no incluye el escritorio gráfico tradicional y puede administrarse mediante comandos y herramientas remotas.",
-    "review": "UT1 · Capítulo 5 · Modalidades de Windows Server"
+    "correct": 0,
+    "explanation": "La gestión centralizada evita administrar cada equipo de forma aislada.",
+    "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
   },
   {
-    "id": "UT1-003",
+    "id": "UT1-02-03",
+    "chapter": 2,
+    "chapterTitle": "Arquitectura cliente-servidor",
+    "topic": "Arquitectura cliente-servidor",
+    "question": "¿Cuál es un ejemplo de servicio de red ofrecido a los clientes?",
+    "options": [
+      "La memoria RAM instalada en un monitor.",
+      "Resolución de nombres mediante DNS.",
+      "El ventilador del procesador del cliente.",
+      "La resolución física de una pantalla."
+    ],
+    "correct": 1,
+    "explanation": "DNS es un servicio que responde a consultas de nombres.",
+    "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
+  },
+  {
+    "id": "UT1-02-04",
+    "chapter": 2,
+    "chapterTitle": "Arquitectura cliente-servidor",
+    "topic": "Arquitectura cliente-servidor",
+    "question": "Si un servidor deja de estar disponible, ¿qué efecto es más probable?",
+    "options": [
+      "Todos los clientes pierden necesariamente sus archivos locales.",
+      "Se borran automáticamente las cuentas de todos los equipos.",
+      "Los clientes pueden perder temporalmente acceso a los servicios que ofrece.",
+      "El cableado de la red deja de funcionar físicamente."
+    ],
+    "correct": 2,
+    "explanation": "La caída afecta a servicios dependientes, no implica borrar datos locales.",
+    "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
+  },
+  {
+    "id": "UT1-02-05",
+    "chapter": 2,
+    "chapterTitle": "Arquitectura cliente-servidor",
+    "topic": "Arquitectura cliente-servidor",
+    "question": "¿Qué describe mejor una petición cliente-servidor?",
+    "options": [
+      "El servidor siempre inicia todas las comunicaciones sin solicitudes.",
+      "Un switch ejecuta aplicaciones por cada usuario.",
+      "Cada cliente necesita una copia física del servidor.",
+      "Un cliente solicita un recurso y el servidor procesa la petición y responde."
+    ],
+    "correct": 3,
+    "explanation": "El modelo cliente-servidor separa quien solicita de quien ofrece servicios.",
+    "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
+  },
+  {
+    "id": "UT1-03-01",
+    "chapter": 3,
+    "chapterTitle": "Sistemas operativos en red",
+    "topic": "Sistemas operativos en red",
+    "question": "¿Qué diferencia a un sistema operativo de servidor de uno orientado al escritorio?",
+    "options": [
+      "Está pensado para administrar y ofrecer servicios a múltiples equipos o usuarios.",
+      "Solo puede ejecutarse en ordenadores sin monitor.",
+      "No necesita actualizaciones de seguridad.",
+      "No puede tener interfaz gráfica."
+    ],
+    "correct": 0,
+    "explanation": "Los sistemas de servidor priorizan servicios, administración y disponibilidad; pueden tener interfaz gráfica.",
+    "review": "UT1 · Capítulo 3 · Sistemas operativos en red"
+  },
+  {
+    "id": "UT1-03-02",
+    "chapter": 3,
+    "chapterTitle": "Sistemas operativos en red",
+    "topic": "Sistemas operativos en red",
+    "question": "¿Qué tarea corresponde a un sistema operativo en red?",
+    "options": [
+      "Sustituir físicamente los cables dañados.",
+      "Gestionar recursos compartidos y controlar su acceso.",
+      "Aumentar automáticamente la capacidad de los discos.",
+      "Evitar cualquier error de hardware."
+    ],
+    "correct": 1,
+    "explanation": "El sistema administra recursos, usuarios y permisos; no elimina fallos físicos.",
+    "review": "UT1 · Capítulo 3 · Sistemas operativos en red"
+  },
+  {
+    "id": "UT1-03-03",
+    "chapter": 3,
+    "chapterTitle": "Sistemas operativos en red",
+    "topic": "Sistemas operativos en red",
+    "question": "¿Por qué es importante la gestión de permisos en un servidor?",
+    "options": [
+      "Porque hace innecesaria la autenticación.",
+      "Porque aumenta la frecuencia del procesador.",
+      "Porque permite limitar el acceso según usuarios o grupos.",
+      "Porque desactiva las actualizaciones del sistema."
+    ],
+    "correct": 2,
+    "explanation": "Los permisos ayudan a aplicar el principio de mínimo privilegio.",
+    "review": "UT1 · Capítulo 3 · Sistemas operativos en red"
+  },
+  {
+    "id": "UT1-03-04",
+    "chapter": 3,
+    "chapterTitle": "Sistemas operativos en red",
+    "topic": "Sistemas operativos en red",
+    "question": "¿Qué significa administrar un servidor de forma remota?",
+    "options": [
+      "Conectar obligatoriamente un teclado a cada cliente.",
+      "Instalar el sistema sin una tarjeta de red.",
+      "Copiar el disco del servidor cada vez que se inicia.",
+      "Configurar o supervisar el servidor desde otro equipo autorizado."
+    ],
+    "correct": 3,
+    "explanation": "La administración remota permite trabajar desde otro equipo mediante herramientas y permisos adecuados.",
+    "review": "UT1 · Capítulo 3 · Sistemas operativos en red"
+  },
+  {
+    "id": "UT1-03-05",
+    "chapter": 3,
+    "chapterTitle": "Sistemas operativos en red",
+    "topic": "Sistemas operativos en red",
+    "question": "¿Cuál es una medida adecuada para mantener un servidor seguro?",
+    "options": [
+      "Aplicar actualizaciones y limitar privilegios innecesarios.",
+      "Compartir la cuenta de administrador con todos los alumnos.",
+      "Desactivar permanentemente el firewall.",
+      "Usar contraseñas idénticas para todos los usuarios."
+    ],
+    "correct": 0,
+    "explanation": "Las actualizaciones y el mínimo privilegio reducen riesgos.",
+    "review": "UT1 · Capítulo 3 · Sistemas operativos en red"
+  },
+  {
+    "id": "UT1-04-01",
+    "chapter": 4,
+    "chapterTitle": "Selección del sistema operativo",
+    "topic": "Selección del sistema operativo",
+    "question": "Antes de elegir un sistema operativo de servidor, ¿qué conviene comprobar?",
+    "options": [
+      "Únicamente el color del escritorio.",
+      "Requisitos de hardware, compatibilidad y servicios necesarios.",
+      "Solo la marca del monitor.",
+      "Que tenga el mismo fondo de pantalla que los clientes."
+    ],
+    "correct": 1,
+    "explanation": "La selección depende de requisitos técnicos, compatibilidad, administración y necesidades.",
+    "review": "UT1 · Capítulo 4 · Selección del sistema operativo"
+  },
+  {
+    "id": "UT1-04-02",
+    "chapter": 4,
+    "chapterTitle": "Selección del sistema operativo",
+    "topic": "Selección del sistema operativo",
+    "question": "¿Por qué debe revisarse la compatibilidad de una aplicación antes de elegir la versión del servidor?",
+    "options": [
+      "Porque todas las aplicaciones funcionan igual en cualquier sistema.",
+      "Porque la compatibilidad solo afecta a los ratones.",
+      "Porque la aplicación puede exigir versiones o componentes concretos.",
+      "Porque las aplicaciones nunca dependen del sistema operativo."
+    ],
+    "correct": 2,
+    "explanation": "Las aplicaciones y controladores tienen requisitos que condicionan la elección.",
+    "review": "UT1 · Capítulo 4 · Selección del sistema operativo"
+  },
+  {
+    "id": "UT1-04-03",
+    "chapter": 4,
+    "chapterTitle": "Selección del sistema operativo",
+    "topic": "Selección del sistema operativo",
+    "question": "¿Qué ventaja tiene utilizar una versión de servidor con soporte vigente?",
+    "options": [
+      "Garantizar que ningún usuario cometerá errores.",
+      "Evitar por completo los cortes eléctricos.",
+      "Eliminar la necesidad de hacer copias de seguridad.",
+      "Recibir correcciones de seguridad y mantenimiento del fabricante."
+    ],
+    "correct": 3,
+    "explanation": "El soporte facilita recibir actualizaciones, pero no sustituye otras medidas.",
+    "review": "UT1 · Capítulo 4 · Selección del sistema operativo"
+  },
+  {
+    "id": "UT1-04-04",
+    "chapter": 4,
+    "chapterTitle": "Selección del sistema operativo",
+    "topic": "Selección del sistema operativo",
+    "question": "¿Qué aspecto puede influir en el coste de implantar Windows Server?",
+    "options": [
+      "El modelo de licencias y las necesidades de acceso de los clientes.",
+      "Solo la cantidad de iconos del escritorio.",
+      "La longitud del nombre del equipo.",
+      "Únicamente el idioma del teclado."
+    ],
+    "correct": 0,
+    "explanation": "Las licencias del servidor y, según el escenario, las de acceso de clientes influyen en el coste.",
+    "review": "UT1 · Capítulo 4 · Selección del sistema operativo"
+  },
+  {
+    "id": "UT1-04-05",
+    "chapter": 4,
+    "chapterTitle": "Selección del sistema operativo",
+    "topic": "Selección del sistema operativo",
+    "question": "¿Qué decisión es razonable para un servidor que debe ejecutar una aplicación específica?",
+    "options": [
+      "Elegir siempre la versión más antigua disponible.",
+      "Comprobar que el sistema elegido está soportado por esa aplicación.",
+      "Desactivar las comprobaciones de compatibilidad.",
+      "Instalar cualquier sistema y esperar que funcione sin pruebas."
+    ],
+    "correct": 1,
+    "explanation": "Los requisitos de la aplicación deben verificarse antes del despliegue.",
+    "review": "UT1 · Capítulo 4 · Selección del sistema operativo"
+  },
+  {
+    "id": "UT1-05-01",
+    "chapter": 5,
+    "chapterTitle": "Windows Server",
+    "topic": "Windows Server",
+    "question": "¿Qué caracteriza a Server Core frente a Experiencia de escritorio?",
+    "options": [
+      "Incluye más herramientas gráficas locales por defecto.",
+      "Solo puede funcionar sin conexión de red.",
+      "No incluye el escritorio gráfico tradicional y admite administración remota.",
+      "Permite convertir cualquier instalación en otra sin reinstalar."
+    ],
+    "correct": 2,
+    "explanation": "Server Core reduce la interfaz gráfica local y se administra con herramientas de línea de comandos y remotas.",
+    "review": "UT1 · Capítulo 5 · Windows Server"
+  },
+  {
+    "id": "UT1-05-02",
+    "chapter": 5,
+    "chapterTitle": "Windows Server",
+    "topic": "Windows Server",
+    "question": "¿Para qué se utilizan los roles de servidor?",
+    "options": [
+      "Para definir el tamaño físico del monitor.",
+      "Para cambiar el tipo de memoria RAM instalada.",
+      "Para eliminar todas las cuentas locales.",
+      "Para habilitar funciones como DNS o servicios de archivos."
+    ],
+    "correct": 3,
+    "explanation": "Los roles agregan funciones de servidor y las características aportan componentes complementarios.",
+    "review": "UT1 · Capítulo 5 · Windows Server"
+  },
+  {
+    "id": "UT1-05-03",
+    "chapter": 5,
+    "chapterTitle": "Windows Server",
+    "topic": "Windows Server",
+    "question": "¿Qué herramienta de Windows Server permite agregar roles desde una interfaz gráfica?",
+    "options": [
+      "Administrador del servidor (Server Manager).",
+      "Administrador de tareas exclusivamente.",
+      "Bloc de notas.",
+      "Calculadora."
+    ],
+    "correct": 0,
+    "explanation": "Administrador del servidor permite agregar roles y características en instalaciones con interfaz gráfica.",
+    "review": "UT1 · Capítulo 5 · Windows Server"
+  },
+  {
+    "id": "UT1-05-04",
+    "chapter": 5,
+    "chapterTitle": "Windows Server",
+    "topic": "Windows Server",
+    "question": "¿Qué función cumple PowerShell en Windows Server?",
+    "options": [
+      "Sustituir físicamente los discos dañados.",
+      "Automatizar y administrar tareas mediante comandos y scripts.",
+      "Convertir cualquier aplicación en un servicio DNS.",
+      "Eliminar la necesidad de permisos de administrador."
+    ],
+    "correct": 1,
+    "explanation": "PowerShell permite automatizar administración, siempre sujeto a permisos.",
+    "review": "UT1 · Capítulo 5 · Windows Server"
+  },
+  {
+    "id": "UT1-05-05",
+    "chapter": 5,
+    "chapterTitle": "Windows Server",
+    "topic": "Windows Server",
+    "question": "¿Por qué puede ser útil una instalación Server Core?",
+    "options": [
+      "Porque elimina todas las vulnerabilidades posibles.",
+      "Porque impide usar herramientas remotas.",
+      "Porque reduce componentes gráficos y superficie de mantenimiento.",
+      "Porque convierte automáticamente el servidor en controlador de dominio."
+    ],
+    "correct": 2,
+    "explanation": "Menos componentes pueden reducir mantenimiento y superficie de ataque, sin garantizar seguridad absoluta.",
+    "review": "UT1 · Capítulo 5 · Windows Server"
+  },
+  {
+    "id": "UT1-06-01",
+    "chapter": 6,
+    "chapterTitle": "Planificación de la instalación",
+    "topic": "Planificación de la instalación",
+    "question": "Antes de instalar Windows Server en una máquina virtual, ¿qué hay que planificar?",
+    "options": [
+      "Solo el nombre de la carpeta de descargas.",
+      "Únicamente la resolución de pantalla.",
+      "El orden de los iconos del escritorio.",
+      "Memoria, CPU, disco, red y finalidad del servidor."
+    ],
+    "correct": 3,
+    "explanation": "Una planificación adecuada contempla recursos y configuración de red.",
+    "review": "UT1 · Capítulo 6 · Planificación de la instalación"
+  },
+  {
+    "id": "UT1-06-02",
+    "chapter": 6,
+    "chapterTitle": "Planificación de la instalación",
+    "topic": "Planificación de la instalación",
+    "question": "¿Qué ventaja tiene una instantánea de máquina virtual antes de un cambio de prueba?",
+    "options": [
+      "Permite volver al estado capturado si el cambio causa problemas.",
+      "Sustituye siempre a una estrategia de copias de seguridad.",
+      "Aumenta la RAM física del ordenador anfitrión.",
+      "Evita todos los errores del sistema invitado."
+    ],
+    "correct": 0,
+    "explanation": "Las instantáneas son útiles en laboratorios, pero no equivalen a copias de seguridad completas.",
+    "review": "UT1 · Capítulo 6 · Planificación de la instalación"
+  },
+  {
+    "id": "UT1-06-03",
+    "chapter": 6,
+    "chapterTitle": "Planificación de la instalación",
+    "topic": "Planificación de la instalación",
+    "question": "En una práctica con servidor y cliente que solo deben comunicarse entre sí, ¿qué red de VirtualBox puede utilizarse?",
+    "options": [
+      "Adaptadores desconectados en las dos máquinas.",
+      "Red interna con el mismo nombre en ambas máquinas.",
+      "Solo NAT sin configurar ningún otro adaptador y sin comprobar conectividad.",
+      "Redes internas con nombres diferentes para cada máquina."
+    ],
+    "correct": 1,
+    "explanation": "La red interna conecta máquinas virtuales que comparten el mismo nombre de red virtual.",
+    "review": "UT1 · Capítulo 6 · Planificación de la instalación"
+  },
+  {
+    "id": "UT1-06-04",
+    "chapter": 6,
+    "chapterTitle": "Planificación de la instalación",
+    "topic": "Planificación de la instalación",
+    "question": "¿Por qué conviene asignar un nombre descriptivo al servidor antes de desplegar servicios?",
+    "options": [
+      "Porque incrementa automáticamente la capacidad de almacenamiento.",
+      "Porque sustituye a la configuración IP.",
+      "Porque facilita identificarlo y administrarlo.",
+      "Porque evita que se necesiten credenciales."
+    ],
+    "correct": 2,
+    "explanation": "Un nombre coherente mejora la identificación y la documentación.",
+    "review": "UT1 · Capítulo 6 · Planificación de la instalación"
+  },
+  {
+    "id": "UT1-06-05",
+    "chapter": 6,
+    "chapterTitle": "Planificación de la instalación",
+    "topic": "Planificación de la instalación",
+    "question": "¿Qué debe comprobarse antes de iniciar la instalación desde una ISO?",
+    "options": [
+      "Que el fondo de pantalla sea el definitivo.",
+      "Que el equipo cliente esté unido a un dominio.",
+      "Que ya exista una carpeta compartida en el servidor.",
+      "Que la imagen corresponda a la versión y arquitectura previstas."
+    ],
+    "correct": 3,
+    "explanation": "Verificar la ISO evita instalar una edición o arquitectura inadecuada.",
+    "review": "UT1 · Capítulo 6 · Planificación de la instalación"
+  },
+  {
+    "id": "UT1-07-01",
     "chapter": 7,
     "chapterTitle": "Preparación del disco",
     "topic": "Preparación del disco",
     "question": "¿Cuál es la diferencia correcta entre GPT y NTFS?",
     "options": [
-      "GPT es un estilo de partición; NTFS es un sistema de archivos",
-      "Ambos son sistemas de archivos",
-      "GPT es un sistema de archivos y NTFS es firmware",
-      "NTFS sustituye a UEFI"
+      "GPT es un estilo de partición y NTFS un sistema de archivos.",
+      "Ambos son sistemas de archivos equivalentes.",
+      "GPT es un sistema de archivos y NTFS un tipo de firmware.",
+      "NTFS sustituye a UEFI."
     ],
     "correct": 0,
-    "explanation": "GPT define cómo se organizan las particiones. NTFS organiza los archivos en un volumen.",
+    "explanation": "GPT organiza particiones; NTFS organiza archivos en volúmenes.",
     "review": "UT1 · Capítulo 7 · Preparación del disco"
   },
   {
-    "id": "UT1-004",
-    "chapter": 9,
-    "chapterTitle": "Configuración IPv4",
-    "topic": "Configuración IPv4",
-    "question": "¿Por qué es conveniente asignar una dirección IP estática a un servidor?",
+    "id": "UT1-07-02",
+    "chapter": 7,
+    "chapterTitle": "Preparación del disco",
+    "topic": "Preparación del disco",
+    "question": "¿Qué relación suele existir entre UEFI y el estilo de partición del disco de arranque de Windows moderno?",
     "options": [
-      "Para aumentar la velocidad de red",
-      "Para desactivar el firewall",
-      "Para no utilizar máscara de red",
-      "Para mantener una dirección conocida para los clientes"
+      "UEFI exige siempre discos MBR en instalaciones actuales.",
+      "UEFI se utiliza habitualmente con discos GPT.",
+      "UEFI es un sistema de archivos que reemplaza NTFS.",
+      "GPT impide arrancar cualquier sistema operativo."
     ],
-    "correct": 3,
-    "explanation": "Una dirección estable facilita que los clientes localicen los servicios del servidor.",
-    "review": "UT1 · Capítulo 9 · Configuración IPv4"
+    "correct": 1,
+    "explanation": "Las instalaciones modernas de Windows con UEFI suelen arrancar desde discos GPT.",
+    "review": "UT1 · Capítulo 7 · Preparación del disco"
   },
   {
-    "id": "UT1-005",
-    "chapter": 9,
-    "chapterTitle": "Comprobación de conectividad",
-    "topic": "Comprobación de conectividad",
-    "question": "El comando ping no recibe respuesta del servidor. ¿Qué conclusión es adecuada?",
+    "id": "UT1-07-03",
+    "chapter": 7,
+    "chapterTitle": "Preparación del disco",
+    "topic": "Preparación del disco",
+    "question": "¿Qué consecuencia tiene eliminar una partición que contiene datos sin haber hecho copia?",
     "options": [
-      "El servidor está necesariamente apagado",
-      "Debemos desactivar todo el firewall",
-      "Hay que revisar la red y las reglas ICMP antes de concluir que no hay conectividad",
-      "RDP no puede funcionar si ping falla"
+      "Windows mueve siempre los datos automáticamente a otra partición.",
+      "La capacidad física del disco se duplica.",
+      "Los datos pueden perderse y su recuperación no está garantizada.",
+      "Se crea una copia de seguridad automática en la RAM."
     ],
     "correct": 2,
-    "explanation": "Un firewall puede bloquear ICMP aunque otros servicios funcionen. Revisa IP, máscara, red virtual y reglas de firewall.",
-    "review": "UT1 · Capítulo 9 · Comprobación de conectividad"
+    "explanation": "Modificar particiones puede destruir datos; conviene hacer copia y comprobar el disco seleccionado.",
+    "review": "UT1 · Capítulo 7 · Preparación del disco"
+  },
+  {
+    "id": "UT1-07-04",
+    "chapter": 7,
+    "chapterTitle": "Preparación del disco",
+    "topic": "Preparación del disco",
+    "question": "¿Qué permite el sistema de archivos NTFS en Windows Server?",
+    "options": [
+      "Asignar direcciones IP por sí mismo.",
+      "Sustituir el adaptador de red.",
+      "Determinar la cantidad de núcleos de CPU.",
+      "Administrar permisos de acceso a archivos y carpetas."
+    ],
+    "correct": 3,
+    "explanation": "NTFS admite listas de control de acceso y otras funciones del sistema de archivos.",
+    "review": "UT1 · Capítulo 7 · Preparación del disco"
+  },
+  {
+    "id": "UT1-07-05",
+    "chapter": 7,
+    "chapterTitle": "Preparación del disco",
+    "topic": "Preparación del disco",
+    "question": "En un disco nuevo sin particiones, ¿qué debe hacerse para guardar archivos de forma habitual?",
+    "options": [
+      "Crear un volumen y formatearlo con un sistema de archivos apropiado.",
+      "Asignarle únicamente una dirección IP.",
+      "Instalar un controlador de impresora.",
+      "Desactivar todos los servicios de Windows."
+    ],
+    "correct": 0,
+    "explanation": "Un volumen formateado permite organizar y almacenar archivos.",
+    "review": "UT1 · Capítulo 7 · Preparación del disco"
+  },
+  {
+    "id": "UT1-08-01",
+    "chapter": 8,
+    "chapterTitle": "Instalación de Windows Server",
+    "topic": "Instalación de Windows Server",
+    "question": "¿Qué función tiene la imagen ISO durante la instalación en VirtualBox?",
+    "options": [
+      "Sustituir a la memoria RAM de la máquina virtual.",
+      "Proporcionar el medio de arranque e instalación del sistema.",
+      "Actuar como dirección IP del servidor.",
+      "Crear automáticamente todas las cuentas de dominio."
+    ],
+    "correct": 1,
+    "explanation": "La ISO contiene los archivos necesarios para iniciar el instalador.",
+    "review": "UT1 · Capítulo 8 · Instalación de Windows Server"
+  },
+  {
+    "id": "UT1-08-02",
+    "chapter": 8,
+    "chapterTitle": "Instalación de Windows Server",
+    "topic": "Instalación de Windows Server",
+    "question": "Al seleccionar el disco de destino en el instalador, ¿qué precaución es esencial?",
+    "options": [
+      "Seleccionar siempre el disco de mayor tamaño sin revisar su contenido.",
+      "Eliminar todas las particiones de cualquier disco conectado.",
+      "Comprobar que es el disco correcto antes de modificar particiones.",
+      "Desactivar el teclado antes de continuar."
+    ],
+    "correct": 2,
+    "explanation": "Elegir mal el disco puede provocar pérdida de datos.",
+    "review": "UT1 · Capítulo 8 · Instalación de Windows Server"
+  },
+  {
+    "id": "UT1-08-03",
+    "chapter": 8,
+    "chapterTitle": "Instalación de Windows Server",
+    "topic": "Instalación de Windows Server",
+    "question": "¿Qué ocurre normalmente durante los reinicios de una instalación de Windows Server?",
+    "options": [
+      "Cada reinicio significa que la instalación ha fallado.",
+      "Se borra siempre la máquina virtual.",
+      "Se convierte el servidor en controlador de dominio automáticamente.",
+      "El instalador continúa configurando el sistema hasta completar el proceso."
+    ],
+    "correct": 3,
+    "explanation": "Los reinicios pueden formar parte normal del proceso de instalación.",
+    "review": "UT1 · Capítulo 8 · Instalación de Windows Server"
+  },
+  {
+    "id": "UT1-08-04",
+    "chapter": 8,
+    "chapterTitle": "Instalación de Windows Server",
+    "topic": "Instalación de Windows Server",
+    "question": "¿Qué conviene hacer con la contraseña de la cuenta Administrador creada durante la instalación?",
+    "options": [
+      "Elegir una contraseña robusta y custodiarla de forma segura.",
+      "Compartirla con todos los usuarios de la red.",
+      "Usar el nombre del servidor como contraseña.",
+      "Dejarla escrita públicamente en el aula."
+    ],
+    "correct": 0,
+    "explanation": "Las credenciales administrativas deben protegerse y no compartirse indiscriminadamente.",
+    "review": "UT1 · Capítulo 8 · Instalación de Windows Server"
+  },
+  {
+    "id": "UT1-08-05",
+    "chapter": 8,
+    "chapterTitle": "Instalación de Windows Server",
+    "topic": "Instalación de Windows Server",
+    "question": "¿Por qué debe verificarse que el servidor arranca desde el disco virtual tras instalarlo?",
+    "options": [
+      "Para aumentar la resolución de la pantalla.",
+      "Para comprobar que ya no depende del medio de instalación.",
+      "Para instalar automáticamente DNS.",
+      "Para eliminar los permisos de administrador."
+    ],
+    "correct": 1,
+    "explanation": "Tras la instalación, el sistema debe arrancar desde su disco de destino.",
+    "review": "UT1 · Capítulo 8 · Instalación de Windows Server"
+  },
+  {
+    "id": "UT1-09-01",
+    "chapter": 9,
+    "chapterTitle": "Configuración inicial",
+    "topic": "Configuración inicial",
+    "question": "¿Por qué es conveniente asignar una dirección IP estática a un servidor?",
+    "options": [
+      "Para aumentar automáticamente el ancho de banda.",
+      "Para desactivar el firewall.",
+      "Para que los clientes conozcan una dirección estable donde localizar sus servicios.",
+      "Para evitar configurar una máscara de subred."
+    ],
+    "correct": 2,
+    "explanation": "Una IP fija facilita la localización estable del servidor.",
+    "review": "UT1 · Capítulo 9 · Configuración inicial"
+  },
+  {
+    "id": "UT1-09-02",
+    "chapter": 9,
+    "chapterTitle": "Configuración inicial",
+    "topic": "Configuración inicial",
+    "question": "En la red 192.168.10.0/24, ¿qué configuración es coherente para el servidor TecnoRed?",
+    "options": [
+      "IP 192.168.11.10 y máscara 255.255.255.0.",
+      "IP 192.168.10.10 y máscara 255.0.0.0 como única opción posible.",
+      "IP 192.168.10.300 y máscara 255.255.255.0.",
+      "IP 192.168.10.10 y máscara 255.255.255.0."
+    ],
+    "correct": 3,
+    "explanation": "192.168.10.10/24 pertenece a la red prevista y usa una máscara /24.",
+    "review": "UT1 · Capítulo 9 · Configuración inicial"
+  },
+  {
+    "id": "UT1-09-03",
+    "chapter": 9,
+    "chapterTitle": "Configuración inicial",
+    "topic": "Configuración inicial",
+    "question": "El comando ping no recibe respuesta del servidor. ¿Qué conclusión es correcta?",
+    "options": [
+      "Hay que revisar la red y las reglas ICMP antes de concluir que no existe conectividad.",
+      "El servidor está necesariamente apagado.",
+      "Todos los servicios del servidor han dejado de funcionar.",
+      "Es obligatorio reinstalar Windows Server."
+    ],
+    "correct": 0,
+    "explanation": "Un firewall puede bloquear ICMP aunque otros servicios respondan.",
+    "review": "UT1 · Capítulo 9 · Configuración inicial"
+  },
+  {
+    "id": "UT1-09-04",
+    "chapter": 9,
+    "chapterTitle": "Configuración inicial",
+    "topic": "Configuración inicial",
+    "question": "¿Qué comando de Windows muestra la configuración IP de los adaptadores?",
+    "options": [
+      "format C:.",
+      "ipconfig /all.",
+      "taskkill /f.",
+      "chkdsk /r como único comando."
+    ],
+    "correct": 1,
+    "explanation": "ipconfig /all muestra direcciones, máscaras, DNS y otros datos de configuración.",
+    "review": "UT1 · Capítulo 9 · Configuración inicial"
+  },
+  {
+    "id": "UT1-09-05",
+    "chapter": 9,
+    "chapterTitle": "Configuración inicial",
+    "topic": "Configuración inicial",
+    "question": "Si el servidor y el cliente están en redes internas de VirtualBox con nombres diferentes, ¿qué es esperable?",
+    "options": [
+      "Que VirtualBox una automáticamente ambas redes por el nombre del servidor.",
+      "Que el firewall cambie la máscara de red.",
+      "Que no se comuniquen directamente a través de esas redes internas separadas.",
+      "Que Windows cree un dominio sin intervención."
+    ],
+    "correct": 2,
+    "explanation": "Las redes internas con nombres distintos son segmentos virtuales separados.",
+    "review": "UT1 · Capítulo 9 · Configuración inicial"
+  },
+  {
+    "id": "UT1-10-01",
+    "chapter": 10,
+    "chapterTitle": "Actualizaciones y mantenimiento",
+    "topic": "Actualizaciones y mantenimiento",
+    "question": "¿Cuál es una finalidad principal de las actualizaciones de seguridad?",
+    "options": [
+      "Garantizar que nunca falle ningún componente físico.",
+      "Eliminar la necesidad de contraseñas.",
+      "Incrementar siempre la velocidad de Internet.",
+      "Corregir vulnerabilidades conocidas del sistema."
+    ],
+    "correct": 3,
+    "explanation": "Los parches reducen riesgos asociados a vulnerabilidades conocidas.",
+    "review": "UT1 · Capítulo 10 · Actualizaciones y mantenimiento"
+  },
+  {
+    "id": "UT1-10-02",
+    "chapter": 10,
+    "chapterTitle": "Actualizaciones y mantenimiento",
+    "topic": "Actualizaciones y mantenimiento",
+    "question": "Antes de aplicar una actualización importante en un servidor de producción, ¿qué práctica es recomendable?",
+    "options": [
+      "Planificar una ventana de mantenimiento y disponer de recuperación o copia verificada.",
+      "Instalarla sin comprobar compatibilidad ni avisar a nadie.",
+      "Borrar todos los registros de eventos.",
+      "Desactivar indefinidamente las copias de seguridad."
+    ],
+    "correct": 0,
+    "explanation": "Planificar reduce el impacto y permite recuperar el servicio ante problemas.",
+    "review": "UT1 · Capítulo 10 · Actualizaciones y mantenimiento"
+  },
+  {
+    "id": "UT1-10-03",
+    "chapter": 10,
+    "chapterTitle": "Actualizaciones y mantenimiento",
+    "topic": "Actualizaciones y mantenimiento",
+    "question": "¿Por qué puede ser necesario reiniciar después de instalar actualizaciones?",
+    "options": [
+      "Porque las actualizaciones siempre formatean el disco.",
+      "Porque algunos componentes se sustituyen o activan durante el reinicio.",
+      "Porque Windows elimina automáticamente las cuentas locales.",
+      "Porque cambia obligatoriamente la dirección IP del servidor."
+    ],
+    "correct": 1,
+    "explanation": "Algunos cambios del sistema requieren reiniciar para completarse.",
+    "review": "UT1 · Capítulo 10 · Actualizaciones y mantenimiento"
+  },
+  {
+    "id": "UT1-10-04",
+    "chapter": 10,
+    "chapterTitle": "Actualizaciones y mantenimiento",
+    "topic": "Actualizaciones y mantenimiento",
+    "question": "¿Qué información ayuda a investigar un problema tras una actualización?",
+    "options": [
+      "Únicamente el color del fondo de pantalla.",
+      "Solo el número de teclas del teclado.",
+      "Los registros de eventos y el historial de actualizaciones.",
+      "El tamaño de la ventana del explorador."
+    ],
+    "correct": 2,
+    "explanation": "Los registros y el historial ayudan a relacionar fallos con cambios recientes.",
+    "review": "UT1 · Capítulo 10 · Actualizaciones y mantenimiento"
+  },
+  {
+    "id": "UT1-10-05",
+    "chapter": 10,
+    "chapterTitle": "Actualizaciones y mantenimiento",
+    "topic": "Actualizaciones y mantenimiento",
+    "question": "¿Qué diferencia existe entre actualizar y hacer una copia de seguridad?",
+    "options": [
+      "Ambas operaciones significan exactamente lo mismo.",
+      "Una actualización garantiza recuperar cualquier archivo borrado.",
+      "Una copia de seguridad sustituye todos los parches de seguridad.",
+      "Actualizar modifica o corrige software; la copia permite recuperar datos o estados."
+    ],
+    "correct": 3,
+    "explanation": "Las actualizaciones y las copias de seguridad cubren necesidades distintas y complementarias.",
+    "review": "UT1 · Capítulo 10 · Actualizaciones y mantenimiento"
   }
 ]

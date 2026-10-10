@@ -13,7 +13,7 @@ modeButtons.forEach(b=>b.disabled=true);
 function start(newMode, subset=null) {
   const source = subset || bank;
   if(!source.length) return; // evita el fallo si aún no hay preguntas
-  mode=newMode; questions=shuffle(source); responses=[]; index=0; show('play'); render();
+  mode=newMode; questions=subset ? shuffle(source) : shuffle(source).slice(0,newMode==='exam'?Math.min(30,source.length):source.length); responses=[]; index=0; show('play'); render();
 }
 function setProgress(percent){
   $('bar').style.width=`${percent}%`;$('progress').setAttribute('aria-valuenow',percent);
@@ -81,9 +81,17 @@ function finish(){
   show('results');
   const right=responses.filter(r=>r.selected===r.q.correct).length;
   const wrong=responses.filter(r=>r.selected!==r.q.correct);
-  $('result-title').textContent=wrong.length?'Ya sabes qué puedes repasar.':'¡Buen trabajo!';
-  $('score').textContent=`${(10*right/responses.length).toFixed(2).replace('.',',')} / 10`;
-  $('summary').textContent=`${right} aciertos de ${responses.length} preguntas. ${wrong.length?'Revisa los conceptos que necesitas reforzar.':'Has acertado todas las preguntas de este intento.'}`;
+  if(mode==='study'){
+    $('result-title').textContent=wrong.length?'Ya sabes qué conceptos reforzar.':'¡Has completado el estudio!';
+    $('score').textContent=`${right} de ${responses.length} conceptos comprendidos`;
+    $('score').classList.add('study-score');
+    $('summary').textContent=wrong.length?'Revisa los conceptos que necesitas reforzar; aquí tienes las explicaciones y capítulos.':'Has acertado todas las preguntas de este intento.';
+  }else{
+    $('result-title').textContent=wrong.length?'Tu autoevaluación está lista.':'¡Buen trabajo!';
+    $('score').textContent=`${(10*right/responses.length).toFixed(2).replace('.',',')} / 10`;
+    $('score').classList.remove('study-score');
+    $('summary').textContent=`${right} aciertos de ${responses.length} preguntas. ${wrong.length?'Revisa los conceptos que necesitas reforzar.':'Has acertado todas las preguntas de este intento.'}`;
+  }
   $('chapters').replaceChildren();
   const groups=new Map();
   for(const r of responses){
