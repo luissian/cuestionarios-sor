@@ -1,54 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cuestionarios - Sistemas Operativos en Red</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            color: #243b55;
-        }
-
-        p {
-            color: #555;
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: auto;
-            padding: 40px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091525">
+  <meta name="description" content="Cuestionarios gratuitos de autoevaluación para Sistemas Operativos en Red de 2.º SMR.">
+  <title>SOR · Aprende, practica, avanza</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Sistemas Operativos en Red</h1>
-
-        <h2>Cuestionarios de autoevaluación</h2>
-
-        <p>
-            Material de apoyo para estudiantes de
-            2.º de Sistemas Microinformáticos y Redes.
-        </p>
-
-        <p>
-            Próximamente estarán disponibles los
-            cuestionarios de las distintas unidades.
-        </p>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="#inicio" aria-label="SOR, volver al inicio"><span class="brand-mark">S<span class="brand-dot">.</span></span><span class="brand-copy">SOR <small>LAB</small></span></a>
+      <nav class="nav-links" aria-label="Navegación principal"><a href="#unidades">Unidades</a><a href="#metodologia">Cómo funciona</a></nav>
+      <a class="nav-cta" href="#unidades">Empezar a practicar <span aria-hidden="true">↗</span></a>
     </div>
+  </header>
+  <main id="inicio">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> TU ESPACIO DE AUTOEVALUACIÓN <span class="eyebrow-line"></span> 2.º SMR</div>
+        <h1 id="hero-title">Aprende a tu ritmo.<br><span>Domina cada unidad.</span></h1>
+        <p class="hero-description">Pon a prueba tus conocimientos de <strong>Sistemas Operativos en Red</strong> con cuestionarios pensados para comprender, practicar y ganar confianza.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#unidades">Explorar unidades <span aria-hidden="true">→</span></a><a class="button button-ghost" href="#metodologia">Descubre cómo funciona <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="note-icon">✓</span> Gratis · Sin registro · A tu ritmo</div>
+      </div>
+      <div class="hero-visual" aria-label="Vista previa ilustrativa de un cuestionario">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag floating-tag-top"><span class="tag-spark">✦</span> APRENDER HACIENDO</div>
+        <div class="preview-card"><div class="preview-head"><span class="preview-dots"><i></i><i></i><i></i></span><span>VISTA PREVIA · UT1</span><span class="preview-symbol">⌘</span></div><div class="preview-content"><div class="preview-meta"><span>CONCEPTO CLAVE</span><span>01 / 05</span></div><div class="preview-progress"><span></span></div><h2>¿Qué permite una dirección IP estática en un servidor?</h2><div class="preview-answer"><span class="answer-letter">A</span> Cambiar automáticamente de red</div><div class="preview-answer chosen"><span class="answer-letter">B</span> Mantener una dirección conocida <span class="answer-check">✓</span></div><div class="preview-answer"><span class="answer-letter">C</span> Aumentar la velocidad de la CPU</div></div></div>
+        <div class="floating-tag floating-tag-bottom"><span class="tag-check">✓</span> ¡Así se aprende!</div>
+      </div>
+    </section>
+    <section class="stats-band" aria-label="Características"><div class="shell stats-grid"><div><strong>05</strong><span>Unidades didácticas</span></div><div><strong>02</strong><span>Modos de aprendizaje*</span></div><div><strong>100%</strong><span>Acceso gratuito</span></div><p>* Modos de estudio y examen en preparación.</p></div></section>
+    <section class="units-section shell" id="unidades" aria-labelledby="units-title"><div class="section-top"><div><span class="section-kicker">TU RUTA DE APRENDIZAJE</span><h2 id="units-title">Elige una unidad<span class="heading-dot">.</span></h2><p>Avanza paso a paso. Cada unidad tendrá preguntas, corrección y explicaciones para ayudarte a mejorar.</p></div><span class="section-count">01 — 05 / UNIDADES</span></div>
+      <div class="units-grid">
+        <article class="unit-card featured"><div class="unit-card-top"><span class="unit-index">UNIDAD 01</span><span class="status status-design">EN PREPARACIÓN</span></div><div class="unit-icon icon-blue" aria-hidden="true">▣</div><h3>Instalación de<br>Windows Server</h3><p>Arquitectura cliente-servidor, virtualización, instalación, configuración y conectividad.</p><div class="card-bottom"><span>Windows Server · VirtualBox</span><span class="card-arrow" aria-hidden="true">↗</span></div></article>
+        <article class="unit-card"><div class="unit-card-top"><span class="unit-index">UNIDAD 02</span><span class="status">PRÓXIMAMENTE</span></div><div class="unit-icon icon-purple" aria-hidden="true">◇</div><h3>Servicio de<br>directorio</h3><p>Introducción a Active Directory, dominios y servicios de directorio.</p><div class="card-bottom"><span>Active Directory</span><span class="card-arrow muted" aria-hidden="true">↗</span></div></article>
+        <article class="unit-card"><div class="unit-card-top"><span class="unit-index">UNIDAD 03</span><span class="status">PRÓXIMAMENTE</span></div><div class="unit-icon icon-mint" aria-hidden="true">♧</div><h3>Usuarios<br>y grupos</h3><p>Administración de cuentas, grupos y permisos en un dominio.</p><div class="card-bottom"><span>Identidades y permisos</span><span class="card-arrow muted" aria-hidden="true">↗</span></div></article>
+        <article class="unit-card"><div class="unit-card-top"><span class="unit-index">UNIDAD 04</span><span class="status">PRÓXIMAMENTE</span></div><div class="unit-icon icon-orange" aria-hidden="true">⚙</div><h3>Administración<br>del servidor</h3><p>Herramientas de administración, mantenimiento y configuración del sistema.</p><div class="card-bottom"><span>Administración</span><span class="card-arrow muted" aria-hidden="true">↗</span></div></article>
+        <article class="unit-card"><div class="unit-card-top"><span class="unit-index">UNIDAD 05</span><span class="status">PRÓXIMAMENTE</span></div><div class="unit-icon icon-pink" aria-hidden="true">⇄</div><h3>Recursos<br>compartidos</h3><p>Carpetas compartidas, acceso a recursos y control de permisos.</p><div class="card-bottom"><span>Servicios de red</span><span class="card-arrow muted" aria-hidden="true">↗</span></div></article>
+      </div>
+      <p class="availability-note"><span aria-hidden="true">ⓘ</span> Estamos construyendo los cuestionarios. Esta es la primera versión de la página de inicio.</p>
+    </section>
+    <section class="method-section" id="metodologia"><div class="shell"><div class="method-heading"><span class="section-kicker">UNA FORMA MEJOR DE REPASAR</span><h2>Practicar también es <em>aprender.</em></h2><p>Dos maneras de trabajar los contenidos, según lo que necesites en cada momento.</p></div><div class="method-grid"><article class="method-card"><span class="method-number">01 / MODO ESTUDIO</span><div class="method-illustration study" aria-hidden="true">◎</div><h3>Entiende cada respuesta.</h3><p>Responde a tu ritmo y recibe una explicación después de cada pregunta. Ideal para aprender y resolver dudas.</p><span class="method-pill">Corrección inmediata</span></article><article class="method-card"><span class="method-number">02 / MODO EXAMEN</span><div class="method-illustration exam" aria-hidden="true">◈</div><h3>Comprueba lo que sabes.</h3><p>Resuelve una selección de preguntas y revisa tus aciertos, errores y explicaciones al terminar.</p><span class="method-pill">Resultado final</span></article></div><p class="method-disclaimer">Estas modalidades estarán disponibles cuando publiquemos el primer cuestionario.</p></div></section>
+    <section class="closing shell"><div class="closing-inner"><span class="closing-glow" aria-hidden="true"></span><span class="section-kicker">EL SIGUIENTE PASO ES TUYO</span><h2>Un concepto cada día.<br><span>Un poco más cerca de dominarlo.</span></h2><a class="button button-primary" href="#unidades">Ver unidades <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div class="footer-brand"><span class="footer-logo">S<span>.</span></span><div><strong>SOR LAB</strong><small>Cuestionarios de autoevaluación · 2.º SMR</small></div></div><p>Material independiente de apoyo al estudio. No es una plataforma oficial de evaluación.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
 </body>
 </html>
