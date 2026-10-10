@@ -1,7 +1,7 @@
 'use strict';
 const $ = id => document.getElementById(id);
 const screens = ['modes','play','results'];
-let bank=[], questions=[], responses=[], index=0, chosen=null, mode='study', checked=false;
+let bank=[], questions=[], responses=[], index=0, chosen=null, mode='study', checked=false, lastWrong=[];
 const modeButtons = document.querySelectorAll('[data-mode]');
 const show = name => screens.forEach(id => $(id).classList.toggle('hidden',id!==name));
 const shuffle = array => {let a=[...array];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -15,9 +15,19 @@ function start(newMode, subset=null) {
   if(!source.length) return; // evita el fallo si aún no hay preguntas
   mode=newMode; questions=shuffle(source); responses=[]; index=0; show('play'); render();
 }
+function setProgress(percent){
+  $('bar').style.width=`${percent}%`;$('progress').setAttribute('aria-valuenow',percent);
+}
 function render(){
   const q=questions[index];chosen=null;checked=false;
-  $('mode-label').textContent=mode==='study'?'MODO ESTUDIO':'MODO EXAMEN';
+  $('mode-label').textContent=mode==='study'?'◎ MODO ESTUDIO':'◈ MODO EXAMEN';
+  const hint=$('mode-hint');
+  if(hint){
+    hint.textContent=mode==='study'
+      ? '◎ Estás aprendiendo: al comprobar cada respuesta verás una explicación y qué capítulo repasar.'
+      : '◈ Estás en una autoevaluación: no conocerás las soluciones hasta terminar el cuestionario.';
+    hint.className='mode-hint '+(mode==='study'?'hint-study':'hint-exam');
+  }
   $('counter').textContent=`${index+1} / ${questions.length}`;
   setProgress(Math.round(100*index/questions.length));
   $('topic').textContent=`CAPÍTULO ${q.chapter} · ${q.topic}`;
@@ -34,10 +44,7 @@ function render(){
     $('options').append(b);
   });
   $('next').disabled=true;
-  $('next').textContent=mode==='study'?'Comprobar respuesta':index===questions.length-1?'Finalizar examen':'Siguiente pregunta →';
-}
-function setProgress(percent){
-  $('bar').style.width=`${percent}%`;$('progress').setAttribute('aria-valuenow',percent);
+  $('next').textContent=mode==='study'?'Comprobar y aprender':index===questions.length-1?'Finalizar examen':'Guardar y continuar →';
 }
 function select(original,button){
   if(checked)return;
@@ -103,13 +110,11 @@ function finish(){
     const ref=document.createElement('small');ref.textContent='📖 '+r.q.review;
     row.append(state,title,your,correct,explain,ref);$('review').append(row);
   });
-  // Se guarda la lista de fallos aquí para que "Repasar mis errores" no dependa
-  // del estado de responses en el momento del clic.
+  // Se guarda la lista de fallos al terminar para que "Repasar mis errores" sea fiable.
   lastWrong=wrong.map(r=>r.q);
   $('retry').disabled=wrong.length===0;
   $('retry').textContent=wrong.length?`Repasar mis errores (${wrong.length})`:'Sin errores que repasar';
 }
-let lastWrong=[];
 
 // Comprueba que cada pregunta tenga todos los campos que usa la interfaz.
 function validQuestion(q){
