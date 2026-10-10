@@ -1,0 +1,82 @@
+[
+  {
+    "id": "UT1-001",
+    "chapter": 2,
+    "chapterTitle": "Arquitectura cliente-servidor",
+    "topic": "Arquitectura cliente-servidor",
+    "question": "Un equipo central proporciona una carpeta compartida a diez ordenadores. ¿Qué función desempeña? ",
+    "options": [
+      "Cliente, porque solicita archivos",
+      "Servidor, porque proporciona un recurso",
+      "Router, porque conecta redes",
+      "Switch, porque gestiona permisos"
+    ],
+    "correct": 1,
+    "explanation": "El servidor proporciona servicios o recursos a los clientes.",
+    "review": "UT1 · Capítulo 2 · Arquitectura cliente-servidor"
+  },
+  {
+    "id": "UT1-002",
+    "chapter": 5,
+    "chapterTitle": "Modalidades de Windows Server",
+    "topic": "Modalidades de Windows Server",
+    "question": "¿Qué caracteriza a Server Core frente a Experiencia de escritorio?",
+    "options": [
+      "Incluye una interfaz gráfica completa",
+      "Solo permite administrar desde el propio servidor",
+      "No incluye el escritorio gráfico tradicional",
+      "Permite cambiar a Experiencia de escritorio sin reinstalar"
+    ],
+    "correct": 2,
+    "explanation": "Server Core no incluye el escritorio gráfico tradicional y puede administrarse mediante comandos y herramientas remotas.",
+    "review": "UT1 · Capítulo 5 · Modalidades de Windows Server"
+  },
+  {
+    "id": "UT1-003",
+    "chapter": 7,
+    "chapterTitle": "Preparación del disco",
+    "topic": "Preparación del disco",
+    "question": "¿Cuál es la diferencia correcta entre GPT y NTFS?",
+    "options": [
+      "GPT es un estilo de partición; NTFS es un sistema de archivos",
+      "Ambos son sistemas de archivos",
+      "GPT es un sistema de archivos y NTFS es firmware",
+      "NTFS sustituye a UEFI"
+    ],
+    "correct": 0,
+    "explanation": "GPT define cómo se organizan las particiones. NTFS organiza los archivos en un volumen.",
+    "review": "UT1 · Capítulo 7 · Preparación del disco"
+  },
+  {
+    "id": "UT1-004",
+    "chapter": 9,
+    "chapterTitle": "Configuración IPv4",
+    "topic": "Configuración IPv4",
+    "question": "¿Por qué es conveniente asignar una dirección IP estática a un servidor?",
+    "options": [
+      "Para aumentar la velocidad de red",
+      "Para desactivar el firewall",
+      "Para no utilizar máscara de red",
+      "Para mantener una dirección conocida para los clientes"
+    ],
+    "correct": 3,
+    "explanation": "Una dirección estable facilita que los clientes localicen los servicios del servidor.",
+    "review": "UT1 · Capítulo 9 · Configuración IPv4"
+  },
+  {
+    "id": "UT1-005",
+    "chapter": 9,
+    "chapterTitle": "Comprobación de conectividad",
+    "topic": "Comprobación de conectividad",
+    "question": "El comando ping no recibe respuesta del servidor. ¿Qué conclusión es adecuada?",
+    "options": [
+      "El servidor está necesariamente apagado",
+      "Debemos desactivar todo el firewall",
+      "Hay que revisar la red y las reglas ICMP antes de concluir que no hay conectividad",
+      "RDP no puede funcionar si ping falla"
+    ],
+    "correct": 2,
+    "explanation": "Un firewall puede bloquear ICMP aunque otros servicios funcionen. Revisa IP, máscara, red virtual y reglas de firewall.",
+    "review": "UT1 · Capítulo 9 · Comprobación de conectividad"
+  }
+]
